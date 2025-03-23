@@ -1,0 +1,19 @@
+<div class="user-detail-page">
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="card shadow-lg">
+            <div class="card-body text-center">
+              <img src="https://via.placeholder.com/150" class="rounded-circle mb-3" alt="User Avatar">
+              <h5 class="card-title">{{ user?.name }}</h5>
+              <p class="card-text"><strong>Email:</strong> {{ user?.email }}</p>
+              <p class="card-text"><strong>Phone:</strong> {{ user?.phone }}</p>
+              <p class="card-text"><strong>Website:</strong> {{ user?.website }}</p>
+              <p class="card-text"><strong>Company:</strong> {{ user?.company?.name }}</p>
+              <a routerLink="/users" class="btn btn-primary">Back to Users</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
